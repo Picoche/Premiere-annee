@@ -1,0 +1,2087 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    margin-top : -10rem;
+    opacity : 0;
+    transition : 1.5s;
+}
+
+.show {
+    margin-bottom : 10rem;
+    transition : 1.5s;
+    opacity : 1;
+}
+
+.red {
+    color : red;
+}
+
+#top ul {
+    list-style : none;
+}
+
+main {
+    display : flex;
+    flex-direction: column;
+}
+
+h1 {
+    color : #335384;
+    font-size: 28px;
+}
+
+h3, h4 {
+    color : #5ba7d1;
+}
+
+.barre {  
+    height : 2px;
+    width : 5rem;
+    background-color: black;
+}
+
+#top {
+    background-color : #335384;
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+    line-height : 2rem;
+    color : white;
+    padding-bottom : 1.5rem;
+}
+
+.important {
+    margin : 1rem auto;
+    font-weight : bold;
+}
+
+.fade {
+    opacity : .5;
+}
+
+#moi {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    height : 10rem;
+    width : 10rem;
+}
+
+.contact {
+    margin : 0;
+    padding : 0;
+}
+
+.contact li {
+    text-align: center;
+}
+
+#align {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width : 100%;
+}
+
+#headerCol {
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+#headerCol .contact {
+    font-size : 18px;
+}
+
+#headerCol .important {
+    font-size : 20px;
+}
+
+#headerCol:hover {
+    padding-top : 2rem;
+    transform: scale(1.1);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#headerColTel {
+    display: none;
+    flex-direction: column;
+    transform: scale(1);
+    transition-duration: 1s;
+}
+
+#logos {
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin : 0 2rem 0 2rem;
+}
+
+#next {
+    height : 1rem;
+    background-color :black;
+    width : 10rem;
+    border: 2px solid blue;
+    border-radius :50%;
+}
+
+#previous {
+    height : 1rem;
+    background-color :black;
+    width : 10rem;
+    border: 2px solid orange;
+    border-radius :50%;
+}
+
+#imgs {
+    display : flex;
+    flex-direction: column;
+    height : 10rem;
+    overflow : hidden;
+}
+
+#logos img {
+    height : 10rem;
+    aspect-ratio: 1/1;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: row;
+    gap : 2rem;
+    margin-left : 2rem;
+}
+
+#bottomText {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top : 5rem;
+    gap : 1rem;
+}
+
+label {
+    font-weight : bold;
+}
+
+form input {
+    border-radius: 3px;
+    line-height: 1.4;
+    font-size: 15px;
+    min-height: 40px;
+    border-radius: 3px;
+    width: 530px;
+    padding: 5px 14px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+textarea {
+    width: 530px;
+    border-radius: 3px;
+    height: 10rem;
+    resize: vertical;
+    max-height : 30rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 5px 14px;
+}
+
+#submit {
+    background-color: #BABABA;
+    color: #FFFFFF;
+    min-height: 40px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    transition-duration: .3s;
+    transition-property: scale(1);
+    width: 8rem;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #335384;
+    color : white;
+    transition-duration: .3s;
+    transform: scale(1.1)
+}
+
+.required::after {
+    content: " *";
+    color : red;
+}
+
+#hiddenForm{
+    display : none;
+}
+
+#hiddenFormTel{
+    display : none;
+}
+
+#scrollTop {
+    position: sticky;
+    bottom : 5px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left : 90%;
+    width : 30px;
+    aspect-ratio: 1/1;
+    color : white;
+    transform: rotate(270deg);
+    background-color: grey;
+    border-radius: 75px;
+}
+
+#scrollTop .hiddenTop {
+    opacity : 0;
+    transition : 1s;
+}
+
+#scrollTop .showTop {
+    opacity : 1;
+    transition : 1s;
+}
+
+
+@media only screen and (min-width : 380px) and (max-width: 445px) {
+    
+    body {
+        margin : 0;
+        padding : 0;
+        box-sizing: border-box;
+    }
+    
+    .hidden {
+        margin-top : -5rem;
+        transition : 1.5s;
+    }
+    
+    .show {
+        margin-bottom : 5rem;
+        transition : 1.5s;
+    }
+    
+    .red {
+        color : red;
+    }
+    
+    #top ul {
+        list-style : none;
+    }
+    
+    main {
+        display : flex;
+        flex-direction: column;
+    }
+    
+    h1 {
+        color : #335384;
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size : 17px;
+    }
+    
+    h3, h4 {
+        color : #5ba7d1;
+    }
+    
+    .barre {  
+        height : 2px;
+        width : 5rem;
+        background-color: black;
+    }
+    
+    #top {
+        background-color : #335384;
+        display : flex;
+        flex-direction : column;
+        justify-content : space-around;
+        align-items: center;
+        line-height : 2rem;
+        color : white;
+        padding-bottom : 1.5rem;
+    }
+    
+    .important {
+        margin : 1rem auto;
+        font-weight : bold;
+    }
+    
+    .fade {
+        opacity : .5;
+    }
+    
+    #moi {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        height : 7rem;
+        width : 7rem;
+    }
+    
+    .contact {
+        margin : 0;
+        padding : 0;
+    }
+    
+    .contact li {
+        text-align: center;
+    }
+    
+    #align {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width : 100%
+    }
+    
+    #headerCol {
+        display: none;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+    
+    #headerCol:hover {
+        padding-top : 2rem;
+        transform: scale(1.1);
+        transition: all 1s;
+        cursor: pointer;
+    }
+    
+    #headerColTel {
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+
+    #headerColTel .contact {
+        font-size : 12px;
+    }
+    
+    #logos {
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin : 0 2rem 0 2rem;
+    }
+
+    #next {
+        height : 1rem;
+        background-color :black;
+        width : 5rem;
+        border: 2px solid blue;
+        border-radius :50%;
+    }
+    
+    #previous {
+        height : 1rem;
+        background-color :black;
+        width : 5rem;
+        border: 2px solid orange;
+        border-radius :50%;
+    }
+    
+    #imgs {
+        display : flex;
+        flex-direction: column;
+        height : 5rem;
+        overflow : hidden;
+    }
+    
+    #logos img {
+        height : 5rem;
+        aspect-ratio: 1/1;
+    }
+    
+    #bottom {
+        display: flex;
+        flex-direction: row;
+        gap : 2rem;
+    }
+    
+    #bottomText {
+        width: 90%;
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form {
+        margin-top : 5rem;
+        gap : 1rem;
+    }
+    
+    label {
+        font-weight : bold;
+    }
+    
+    #hiddenForm input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        min-height: 40px;
+        border-radius: 3px;
+        width: 90%;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenForm textarea {
+        width: 90%;
+        border-radius: 3px;
+        height: 10rem;
+        resize: vertical;
+        max-height : 30rem;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenForm #submit {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submit:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+
+    #hiddenFormTel input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        height: 10px;
+        border-radius: 3px;
+        width: 300px;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenFormTel textarea {
+        width: 300px;
+        border-radius: 3px;
+        height: 100px;
+        resize: vertical;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenFormTel #submitTel {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submitTel:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+    
+    .required::after {
+        content: " *";
+        color : red;
+    }
+    
+    #hiddenForm{
+        display : none;
+    }
+
+    #hiddenFormTel{
+        display : none;
+    }
+
+    #scrollTop {
+        position: sticky;
+        bottom : 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left : 90%;
+        width : 30px;
+        aspect-ratio: 1/1;
+        color : white;
+        transform: rotate(270deg);
+        background-color: grey;
+        border-radius: 75px;
+    }
+
+    .hiddenTop {
+        opacity : 0;
+        transition : 1s;
+    }
+    
+    .showTop {
+        opacity : 1;
+        transition : 1s;
+    }
+}
+
+@media only screen and (min-width : 445px) and (max-width: 500px) {
+    
+    body {
+        margin : 0;
+        padding : 0;
+        box-sizing: border-box;
+    }
+    
+    .hidden {
+        margin-top : -6rem;
+        transition : 1.5s;
+    }
+    
+    .show {
+        margin-bottom : 6rem;
+        transition : 1.5s;
+    }
+    
+    .red {
+        color : red;
+    }
+    
+    #top ul {
+        list-style : none;
+    }
+    
+    main {
+        display : flex;
+        flex-direction: column;
+    }
+    
+    h1 {
+        color : #335384;
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size : 18px;
+    }
+    
+    h3, h4 {
+        color : #5ba7d1;
+    }
+    
+    .barre {  
+        height : 2px;
+        width : 5rem;
+        background-color: black;
+    }
+    
+    #top {
+        background-color : #335384;
+        display : flex;
+        flex-direction : column;
+        justify-content : space-around;
+        align-items: center;
+        line-height : 2rem;
+        color : white;
+        padding-bottom : 1.5rem;
+    }
+    
+    .important {
+        margin : 1rem auto;
+        font-weight : bold;
+    }
+    
+    .fade {
+        opacity : .5;
+    }
+    
+    #moi {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        height : 8rem;
+        width : 8rem;
+    }
+    
+    .contact {
+        margin : 0;
+        padding : 0;
+    }
+    
+    .contact li {
+        text-align: center;
+    }
+
+    #align {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width : 100%
+    }
+    
+    #headerCol {
+        display: none;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+    
+    #headerCol:hover {
+        padding-top : 2rem;
+        transform: scale(1.1);
+        transition: all 1s;
+        cursor: pointer;
+    }
+    
+    #headerColTel {
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+    
+    #logos {
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin : 0 2rem 0 2rem;
+    }
+
+    #next {
+        height : 1rem;
+        background-color :black;
+        width : 6rem;
+        border: 2px solid blue;
+        border-radius :50%;
+    }
+    
+    #previous {
+        height : 1rem;
+        background-color :black;
+        width : 6rem;
+        border: 2px solid orange;
+        border-radius :50%;
+    }
+    
+    #imgs {
+        display : flex;
+        flex-direction: column;
+        height : 6rem;
+        overflow : hidden;
+    }
+    
+    #logos img {
+        height : 6rem;
+        aspect-ratio: 1/1;
+    }
+    
+    #bottom {
+        display: flex;
+        flex-direction: row;
+        gap : 2rem;
+    }
+    
+    #bottomText {
+        width: 90%;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top : 5rem;
+        gap : 1rem;
+    }
+    
+    label {
+        font-weight : bold;
+    }
+    
+    form {
+        margin-top : 5rem;
+        gap : 1rem;
+    }
+    
+    label {
+        font-weight : bold;
+    }
+    
+    #hiddenForm input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        min-height: 40px;
+        border-radius: 3px;
+        width: 100px;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenForm textarea {
+        width: 100px;
+        border-radius: 3px;
+        height: 10rem;
+        resize: vertical;
+        max-height : 30rem;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenForm #submit {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submit:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+
+    #hiddenFormTel input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        height: 10px;
+        border-radius: 3px;
+        width: 400px;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenFormTel textarea {
+        width: 400px;
+        border-radius: 3px;
+        height: 100px;
+        resize: vertical;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenFormTel #submitTel {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submitTel:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+    
+    .required::after {
+        content: " *";
+        color : red;
+    }
+    
+    #hiddenForm{
+        display : none;
+    }
+
+    #hiddenFormTel{
+        display : none;
+    }
+
+    #scrollTop {
+        position: sticky;
+        bottom : 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left : 90%;
+        width : 30px;
+        aspect-ratio: 1/1;
+        color : white;
+        transform: rotate(270deg);
+        background-color: grey;
+        border-radius: 75px;
+    }
+
+    .hiddenTop {
+        opacity : 0;
+        transition : 1s;
+    }
+    
+    .showTop {
+        opacity : 1;
+        transition : 1s;
+    }
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 570px) {
+    
+    body {
+        margin : 0;
+        padding : 0;
+        box-sizing: border-box;
+    }
+    
+    .hidden {
+        margin-top : -7rem;
+        transition : 1.5s;
+    }
+    
+    .show {
+        margin-bottom : 7rem;
+        transition : 1.5s;
+    }
+    
+    .red {
+        color : red;
+    }
+    
+    #top ul {
+        list-style : none;
+    }
+    
+    main {
+        display : flex;
+        flex-direction: column;
+    }
+    
+    h1 {
+        color : #335384;
+        font-size: 28px;
+    }
+    
+    h3, h4 {
+        color : #5ba7d1;
+    }
+    
+    .barre {  
+        height : 2px;
+        width : 5rem;
+        background-color: black;
+    }
+    
+    #top {
+        background-color : #335384;
+        display : flex;
+        flex-direction : column;
+        justify-content : space-around;
+        align-items: center;
+        line-height : 2rem;
+        color : white;
+        padding-bottom : 1.5rem;
+    }
+    
+    .important {
+        margin : 1rem auto;
+        font-weight : bold;
+    }
+    
+    .fade {
+        opacity : .5;
+    }
+    
+    #moi {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        height : 9rem;
+        width : 9rem;
+    }
+    
+    .contact {
+        margin : 0;
+        padding : 0;
+    }
+    
+    .contact li {
+        text-align: center;
+    }
+
+    #align {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width : 100%
+    }
+    
+    #headerCol {
+        display: none;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+    
+    #headerCol:hover {
+        padding-top : 2rem;
+        transform: scale(1.1);
+        transition: all 1s;
+        cursor: pointer;
+    }
+    
+    #headerColTel {
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+    
+    #logos {
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin : 0 2rem 0 2rem;
+    }
+
+    #next {
+        height : 1rem;
+        background-color :black;
+        width : 7rem;
+        border: 2px solid blue;
+        border-radius :50%;
+    }
+    
+    #previous {
+        height : 1rem;
+        background-color :black;
+        width : 7rem;
+        border: 2px solid orange;
+        border-radius :50%;
+    }
+    
+    #imgs {
+        display : flex;
+        flex-direction: column;
+        height : 7rem;
+        overflow : hidden;
+    }
+    
+    #logos img {
+        height : 7rem;
+        aspect-ratio: 1/1;
+    }
+    
+    #bottom {
+        display: flex;
+        flex-direction: row;
+        gap : 2rem;
+    }
+    
+    #bottomText {
+        width: 90%;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top : 5rem;
+        gap : 1rem;
+    }
+    
+    label {
+        font-weight : bold;
+    }
+    
+    form {
+        margin-top : 5rem;
+        gap : 1rem;
+    }
+    
+    label {
+        font-weight : bold;
+    }
+    
+    #hiddenForm input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        min-height: 40px;
+        border-radius: 3px;
+        width: 100px;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenForm textarea {
+        width: 100px;
+        border-radius: 3px;
+        height: 10rem;
+        resize: vertical;
+        max-height : 30rem;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenForm #submit {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submit:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+
+    #hiddenFormTel input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        height: 10px;
+        border-radius: 3px;
+        width: 450px;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenFormTel textarea {
+        width: 450px;
+        border-radius: 3px;
+        height: 100px;
+        resize: vertical;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenFormTel #submitTel {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submitTel:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+    
+    .required::after {
+        content: " *";
+        color : red;
+    }
+    
+    #hiddenForm{
+        display : none;
+    }
+
+    #hiddenFormTel{
+        display : none;
+    }
+
+    #scrollTop {
+        position: sticky;
+        bottom : 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left : 90%;
+        width : 30px;
+        aspect-ratio: 1/1;
+        color : white;
+        transform: rotate(270deg);
+        background-color: grey;
+        border-radius: 75px;
+    }
+
+    .hiddenTop {
+        opacity : 0;
+        transition : 1s;
+    }
+    
+    .showTop {
+        opacity : 1;
+        transition : 1s;
+    }
+    
+}
+
+@media only screen and (min-width: 570px) and (max-width : 670px) {
+    
+    body {
+        margin : 0;
+        padding : 0;
+        box-sizing: border-box;
+    }
+    
+    .hidden {
+        margin-top : -8rem;
+        transition : 1.5s;
+    }
+    
+    .show {
+        margin-bottom : 8rem;
+        transition : 1.5s;
+    }
+    
+    .red {
+        color : red;
+    }
+    
+    #top ul {
+        list-style : none;
+    }
+    
+    main {
+        display : flex;
+        flex-direction: column;
+    }
+    
+    h1 {
+        color : #335384;
+        font-size: 28px;
+    }
+    
+    h3, h4 {
+        color : #5ba7d1;
+    }
+    
+    .barre {  
+        height : 2px;
+        width : 5rem;
+        background-color: black;
+    }
+    
+    #top {
+        background-color : #335384;
+        display : flex;
+        flex-direction : column;
+        justify-content : space-around;
+        align-items: center;
+        line-height : 2rem;
+        color : white;
+        padding-bottom : 1.5rem;
+    }
+    
+    .important {
+        margin : 1rem auto;
+        font-weight : bold;
+    }
+    
+    .fade {
+        opacity : .5;
+    }
+    
+    #moi {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        height : 10rem;
+        width : 10rem;
+    }
+    
+    .contact {
+        margin : 0;
+        padding : 0;
+    }
+    
+    .contact li {
+        text-align: center;
+    }
+
+    #align {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width : 100%
+    }
+    
+    #headerCol {
+        display: none;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+    
+    #headerCol:hover {
+        padding-top : 2rem;
+        transform: scale(1.1);
+        transition: all 1s;
+        cursor: pointer;
+    }
+    
+    #headerColTel {
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+    
+    #logos {
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin : 0 2rem 0 2rem;
+    }
+
+    #next {
+        height : 1rem;
+        background-color :black;
+        width : 8rem;
+        border: 2px solid blue;
+        border-radius :50%;
+    }
+    
+    #previous {
+        height : 1rem;
+        background-color :black;
+        width : 8rem;
+        border: 2px solid orange;
+        border-radius :50%;
+    }
+    
+    #imgs {
+        display : flex;
+        flex-direction: column;
+        height : 8rem;
+        overflow : hidden;
+    }
+    
+    #logos img {
+        height : 8rem;
+        aspect-ratio: 1/1;
+    }
+    
+    #bottom {
+        display: flex;
+        flex-direction: row;
+        gap : 2rem;
+    }
+    
+    #bottomText {
+        width: 90%;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top : 5rem;
+        gap : 1rem;
+    }
+    
+    label {
+        font-weight : bold;
+    }
+    
+    form {
+        margin-top : 5rem;
+        gap : 1rem;
+    }
+    
+    label {
+        font-weight : bold;
+    }
+    
+    #hiddenForm input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        min-height: 40px;
+        border-radius: 3px;
+        width: 100px;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenForm textarea {
+        width: 100px;
+        border-radius: 3px;
+        height: 10rem;
+        resize: vertical;
+        max-height : 30rem;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenForm #submit {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submit:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+
+    #hiddenFormTel input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        height: 10px;
+        border-radius: 3px;
+        width: 500px;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenFormTel textarea {
+        width: 500px;
+        border-radius: 3px;
+        height: 100px;
+        resize: vertical;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenFormTel #submitTel {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submitTel:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+    
+    .required::after {
+        content: " *";
+        color : red;
+    }
+    
+    #hiddenForm{
+        display : none;
+    }
+
+    #hiddenFormTel{
+        display : none;
+    }
+
+    #scrollTop {
+        position: sticky;
+        bottom : 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left : 90%;
+        width : 30px;
+        aspect-ratio: 1/1;
+        color : white;
+        transform: rotate(270deg);
+        background-color: grey;
+        border-radius: 75px;
+    }
+
+    .hiddenTop {
+        opacity : 0;
+        transition : 1s;
+    }
+    
+    .showTop {
+        opacity : 1;
+        transition : 1s;
+    }
+    
+    
+}
+
+@media only screen and (min-width: 670px) and (max-width : 800px) {
+    
+    body {
+        margin : 0;
+        padding : 0;
+        box-sizing: border-box;
+    }
+    
+    .hidden {
+        margin-top : -8rem;
+        transition : 1.5s;
+    }
+    
+    .show {
+        margin-bottom : 8rem;
+        transition : 1.5s;
+    }
+    
+    .red {
+        color : red;
+    }
+    
+    #top ul {
+        list-style : none;
+    }
+    
+    main {
+        display : flex;
+        flex-direction: column;
+    }
+    
+    h1 {
+        color : #335384;
+        font-size: 28px;
+    }
+    
+    h3, h4 {
+        color : #5ba7d1;
+    }
+    
+    .barre {  
+        height : 2px;
+        width : 5rem;
+        background-color: black;
+    }
+    
+    #top {
+        background-color : #335384;
+        display : flex;
+        flex-direction : column;
+        justify-content : space-around;
+        align-items: center;
+        line-height : 2rem;
+        color : white;
+        padding-bottom : 1.5rem;
+    }
+    
+    .important {
+        margin : 1rem auto;
+        font-weight : bold;
+    }
+    
+    .fade {
+        opacity : .5;
+    }
+    
+    #moi {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        height : 10rem;
+        width : 10rem;
+    }
+    
+    .contact {
+        margin : 0;
+        padding : 0;
+    }
+    
+    .contact li {
+        text-align: center;
+    }
+
+    #align {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width : 100%
+    }
+    
+    #headerCol {
+        display: none;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+    
+    #headerCol:hover {
+        padding-top : 2rem;
+        transform: scale(1.1);
+        transition: all 1s;
+        cursor: pointer;
+    }
+    
+    #headerColTel {
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+    
+    #logos {
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin : 0 2rem 0 2rem;
+    }
+
+    #next {
+        height : 1rem;
+        background-color :black;
+        width : 8rem;
+        border: 2px solid blue;
+        border-radius :50%;
+    }
+    
+    #previous {
+        height : 1rem;
+        background-color :black;
+        width : 8rem;
+        border: 2px solid orange;
+        border-radius :50%;
+    }
+    
+    #imgs {
+        display : flex;
+        flex-direction: column;
+        height : 8rem;
+        overflow : hidden;
+    }
+    
+    #logos img {
+        height : 8rem;
+        aspect-ratio: 1/1;
+    }
+    
+    #bottom {
+        display: flex;
+        flex-direction: row;
+        gap : 2rem;
+    }
+    
+    #bottomText {
+        width: 90%;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top : 5rem;
+        gap : 1rem;
+    }
+    
+    label {
+        font-weight : bold;
+    }
+    
+    form {
+        margin-top : 5rem;
+        gap : 1rem;
+    }
+    
+    label {
+        font-weight : bold;
+    }
+    
+    #hiddenForm input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        min-height: 40px;
+        border-radius: 3px;
+        width: 100px;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenForm textarea {
+        width: 100px;
+        border-radius: 3px;
+        height: 10rem;
+        resize: vertical;
+        max-height : 30rem;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenForm #submit {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submit:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+
+    #hiddenFormTel input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        height: 10px;
+        border-radius: 3px;
+        width: 550px;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenFormTel textarea {
+        width: 550px;
+        border-radius: 3px;
+        height: 100px;
+        resize: vertical;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenFormTel #submitTel {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submitTel:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+    
+    .required::after {
+        content: " *";
+        color : red;
+    }
+    
+    #hiddenForm{
+        display : none;
+    }
+
+    #hiddenFormTel{
+        display : none;
+    }
+
+    #scrollTop {
+        position: sticky;
+        bottom : 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left : 90%;
+        width : 30px;
+        aspect-ratio: 1/1;
+        color : white;
+        transform: rotate(270deg);
+        background-color: grey;
+        border-radius: 75px;
+    }
+
+    .hiddenTop {
+        opacity : 0;
+        transition : 1s;
+    }
+    
+    .showTop {
+        opacity : 1;
+        transition : 1s;
+    }
+    
+}
+
+@media only screen and (min-width: 800px) and (max-width : 1000px) {
+    
+    body {
+        margin : 0;
+        padding : 0;
+        box-sizing: border-box;
+    }
+    
+    .hidden {
+        margin-top : -8rem;
+        transition : 1.5s;
+    }
+    
+    .show {
+        margin-bottom : 8rem;
+        transition : 1.5s;
+    }
+    
+    .red {
+        color : red;
+    }
+    
+    #top ul {
+        list-style : none;
+    }
+    
+    main {
+        display : flex;
+        flex-direction: column;
+    }
+    
+    h1 {
+        color : #335384;
+        font-size: 28px;
+    }
+    
+    h3, h4 {
+        color : #5ba7d1;
+    }
+    
+    .barre {  
+        height : 2px;
+        width : 5rem;
+        background-color: black;
+    }
+    
+    #top {
+        background-color : #335384;
+        display : flex;
+        flex-direction : column;
+        justify-content : space-around;
+        align-items: center;
+        line-height : 2rem;
+        color : white;
+        padding-bottom : 1.5rem;
+    }
+    
+    .important {
+        margin : 1rem auto;
+        font-weight : bold;
+    }
+    
+    .fade {
+        opacity : .5;
+    }
+    
+    #moi {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        height : 10rem;
+        width : 10rem;
+    }
+    
+    .contact {
+        margin : 0;
+        padding : 0;
+    }
+    
+    .contact li {
+        text-align: center;
+    }
+
+    #align {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width : 100%
+    }
+    
+    #headerCol {
+        display: none;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+    
+    #headerCol:hover {
+        padding-top : 2rem;
+        transform: scale(1.1);
+        transition: all 1s;
+        cursor: pointer;
+    }
+    
+    #headerColTel {
+        display: flex;
+        flex-direction: column;
+        transform: scale(1);
+        transition-duration: 1s;
+    }
+    
+    #logos {
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin : 0 2rem 0 2rem;
+    }
+
+    #next {
+        height : 1rem;
+        background-color :black;
+        width : 8rem;
+        border: 2px solid blue;
+        border-radius :50%;
+    }
+    
+    #previous {
+        height : 1rem;
+        background-color :black;
+        width : 8rem;
+        border: 2px solid orange;
+        border-radius :50%;
+    }
+    
+    #imgs {
+        display : flex;
+        flex-direction: column;
+        height : 8rem;
+        overflow : hidden;
+    }
+    
+    #logos img {
+        height : 8rem;
+        aspect-ratio: 1/1;
+    }
+    
+    #bottom {
+        display: flex;
+        flex-direction: row;
+        gap : 2rem;
+    }
+    
+    #bottomText {
+        width: 90%;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        margin-top : 5rem;
+        gap : 1rem;
+    }
+    
+    label {
+        font-weight : bold;
+    }
+    
+    form {
+        margin-top : 5rem;
+        gap : 1rem;
+    }
+    
+    label {
+        font-weight : bold;
+    }
+    
+    #hiddenForm input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        min-height: 40px;
+        border-radius: 3px;
+        width: 100px;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenForm textarea {
+        width: 100px;
+        border-radius: 3px;
+        height: 10rem;
+        resize: vertical;
+        max-height : 30rem;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenForm #submit {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submit:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+
+    #hiddenFormTel input {
+        border-radius: 3px;
+        line-height: 1.4;
+        font-size: 15px;
+        height: 10px;
+        border-radius: 3px;
+        width: 600px;
+        padding: 5px 14px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+    
+    #hiddenFormTel textarea {
+        width: 600px;
+        border-radius: 3px;
+        height: 100px;
+        resize: vertical;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 5px 14px;
+    }
+    
+    #hiddenFormTel #submitTel {
+        background-color: #BABABA;
+        color: #FFFFFF;
+        min-height: 40px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 30px;
+        transition-duration: .3s;
+        transition-property: scale(1);
+        width: 8rem;
+    }
+    
+    #submitTel:hover {
+        cursor: pointer;
+        background-color: #335384;
+        color : white;
+        transition-duration: .3s;
+        transform: scale(1.1)
+    }
+    
+    .required::after {
+        content: " *";
+        color : red;
+    }
+    
+    #hiddenForm{
+        display : none;
+    }
+
+    #hiddenFormTel{
+        display : none;
+    }
+
+    #scrollTop {
+        position: sticky;
+        bottom : 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left : 90%;
+        width : 30px;
+        aspect-ratio: 1/1;
+        color : white;
+        transform: rotate(270deg);
+        background-color: grey;
+        border-radius: 75px;
+    }
+
+    .hiddenTop {
+        opacity : 0;
+        transition : 1s;
+    }
+    
+    .showTop {
+        opacity : 1;
+        transition : 1s;
+    }
+    
+    
+}

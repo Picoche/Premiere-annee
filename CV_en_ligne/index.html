@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Mon CV</title>
+</head>
+<body>
+    <main>
+        <section id="top">
+            <div id="align">
+            <div id="headerCol">
+            <img id = "moi" src="img/FabH.png" alt="Ma photo">
+            <p class = "important">ME CONTACTER</p>
+            <ul class = "contact">
+                <li>18 rue Croix de Fournes, 81100 Castres</li>
+                <li>hombert.fabien@gmail.com</li>
+                <li>06 19 59 00 51</li>
+            </ul>
+        </div>
+        
+        <div id="headerColTel">
+            <img id = "moi" src="img/FabH.png" alt="Ma photo">
+            <p class = "important">ME CONTACTER</p>
+            <ul class= "contact">
+                <li>18 rue Croix de Fournes, 81100 Castres</li>
+                <li>hombert.fabien@gmail.com</li>
+                <li>06 19 59 00 51</li>
+            </ul>
+        </div>
+            <nav>
+                <section id="logos">
+                    <h2>Mes compétences</h2>
+
+                    <span id="previous"></span>
+
+                    <div id="imgs">
+                    <img src="img/html-css.png" alt="logo html-css-javascript">
+
+                    <img class src="img/c++.png" alt="logo c++">
+
+                    <img src="img/php.png" alt="logo php">
+
+                    <img src="img/mysql.png" alt="logo mysql">
+
+                    <img src="img/python.png" alt="logo python">
+
+                    <img src="img/photoshop.png" alt="logo photoshop">
+
+                    <img src="img/illustrator.png" alt="logo illustrator">
+
+                    <img src="img/indesign.png" alt="logo indesign">
+
+                    <img src="img/xd.png" alt="logo xd">
+
+                    <img src="img/excel.png" alt="logo excel">
+
+                </div>
+                
+                <span id="next"></span>
+
+                </section>
+            </div>
+
+                    <form action="" method="POST" id = "hiddenFormTel">
+                        <h2 class="titreForm">Par mail, c'est par là !</h2>
+                        <label for="nom" class = "required">Votre nom</label>
+                        <input type="text" name="nom" id="nomTel" required>
+                        <label for="prenom">Votre prenom</label>
+                
+                        <input type="text" name="prenom" id="prenomTel">
+                
+                        <label for="email" class = "required">Votre adresse e-mail</label>
+                
+                        <input type="email" name="email" id="emailTel" required>
+                
+                        <label for="message" class = "required">Votre message...</label>
+                
+                        <textarea name="message" id="messageTel" cols="30" rows="10" placeholder="...ici !" required></textarea>
+                
+                        <em class = "fade">Les champs marqués d'un "<span class="red">*</span>" sont obligatoires.</em>
+                
+                        <input type="submit" name = "submit" id = "submitTel">
+                    </form>
+                </nav>
+            </section>
+        <section id="bottom">
+        <section id="bottomText">
+        <div id="pres">
+        <h1>HOMBERT FABIEN</h1>
+            <h3>ETUDIANT EN BUT MMI</h3>
+            <div class="barre"></div>
+            <h4>Profil personnel</h4>
+            <p>Je suis actuellement étudiant en première année de MMI. Passionné par la programmation en général, j'effectue ce BUT car mon objectif professionnel serait de devenir développeur web ou développeur full stack. </br></br>Sur le plan personnel, je suis plutôt calme et réservé.</p>
+            <div class="barre"></div>
+        </div>
+        <div id = "qual">
+            <h4>MES QUALIFICATIONS</h4>
+            <span class = "important">Linguistiques :</span>
+            <ul>
+                <li>Anglais : niveau C2 à l'écrit et C1 à l'oral.</li>
+                <li>Espagnol : niveau A2 à l'écrit et à l'oral.</li>
+            </ul>
+            <span class = "important">Techniques :</span>
+            <ul>
+                <li>Bases solides en HTML5 / CSS3 / JavaScript.</li>
+                <li>Connaissances en C++ / PHP / Python et en administration système.</li>
+                <li>Petites bases en administration réseau et en SQL.</li>
+                <li>Bonnes capacités d'utilisation de la suite Adobe (Photoshop, Illustrator, XD, InDesign).</li>
+            </ul>
+        </div>
+
+        <div id = "scol">
+            <h4>PARCOURS SCOLAIRE</h4>
+            <p class="important">Obtention du Baccalauréat Technologique :</p>
+            <p class="fade">Baccalauréat STI2D | Septembre 2018 - Juillet 2020</p>
+            <ul>
+                <li>Compétences en rédaction de documents temporels et en debugging.</li>
+                <li>Premières bases en programmation avec le langage Arduino, sous-famille de C++.</li>
+            </ul>
+            <p class="important">Études dans le supérieur :</p>
+            <p class="fade">BUT MMI | Septembre 2021 - Juillet 2024</p>
+            <ul>
+                <li>Acquisition de compétences en communication, en graphisme et en développement web et logiciel.</li>
+            </ul>
+        </div>
+        <div id = "pro">
+            <h4>PARCOURS PROFESSIONNEL</h4>
+            <p class="important">Stage de première année</p>
+            <p class="fade">Première année de BUT MMI | Février 2022 - Mars 2022</p>
+            <ul>
+                <li>
+                    Modification d'un site web et mise à jour de documents propres à l'entreprise.
+                </li>
+            </ul>
+        </div>
+    </section>
+    <form action="" method="POST" id = "hiddenForm">
+        <h2 class="titreForm">Par mail, c'est par là !</h2>
+        <label for="nom" class = "required">Votre nom</label>
+        <input type="text" name="nom" id="nom" required>
+        <label for="prenom">Votre prenom</label>
+
+        <input type="text" name="prenom" id="prenom">
+
+        <label for="email" class = "required">Votre adresse e-mail</label>
+
+        <input type="email" name="email" id="email" required>
+
+        <label for="message" class = "required">Votre message...</label>
+
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="...ici !" required></textarea>
+
+        <em class = "fade">Les champs marqués d'un "<span class="red">*</span>" sont obligatoires.</em>
+
+        <input type="submit" name = "submit" id = "submit">
+    </form>
+</section>
+<div id="scrollTop" class = "hiddenTop">&#10148</div>
+    </main>
+</body>
+</html>
